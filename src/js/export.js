@@ -19,7 +19,7 @@ class ExportManager {
 
   async loadTemplate() {
     // Load form-wrapper.html template
-    const response = await fetch('./templates/form-wrapper.html');
+    const response = await fetch('./export/form-wrapper.html');
     this.template = await response.text();
   }
 

@@ -39,11 +39,11 @@ D365-Form-Builder/
 │   │   └── design-tokens.css       # D365 form CSS variables
 │   ├── js/
 │   │   ├── app.js                  # Main application logic
-│   │   ├── field-types.js          # Field definitions & HTML generators
-│   │   ├── drag-drop.js            # Drag-and-drop functionality
+│   │   ├── fieldTypes.js           # Field definitions & HTML generators
+│   │   ├── dragDrop.js             # Drag-and-drop functionality
 │   │   ├── export.js               # HTML export logic
 │   │   └── preview.js              # Live preview renderer
-│   └── templates/
+│   └── export/
 │       └── form-wrapper.html       # Base HTML template for export
 │
 ├── CLAUDE.md                       # This file
