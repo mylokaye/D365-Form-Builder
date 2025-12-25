@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D365 Form Builder</title>
+  <link rel="stylesheet" href="css/builder.css">
+  <link rel="stylesheet" href="css/design-tokens.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Header -->
+    <header class="app-header">
+      <h1>D365 Form Builder</h1>
+      
+      <div class="form-settings">
+        <label>
+          Form Title:
+          <input type="text" id="form-title" value="Contact Form">
+        </label>
+        
+        <label>
+          Target:
+          <select id="target-audience">
+            <option value="contact">Contact</option>
+            <option value="lead">Lead</option>
+          </select>
+        </label>
+      </div>
+      
+      <div class="header-actions">
+        <button class="btn btn-secondary" id="preview-btn">Preview</button>
+        <button class="btn btn-primary" id="export-btn">Export HTML</button>
+      </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="app-main">
+      
+      <!-- Field Palette -->
+      <aside class="panel" id="field-palette">
+        <!-- Populated by JS -->
+      </aside>
+      
+      <!-- Canvas -->
+      <section id="form-canvas">
+        <!-- Drop zone - populated by JS -->
+      </section>
+      
+      <!-- Properties Panel -->
+      <aside class="panel" id="properties-panel">
+        <!-- Populated by JS -->
+      </aside>
+      
+    </main>
+    
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/field-types.js"></script>
+  <script src="js/drag-drop.js"></script>
+  <script src="js/preview.js"></script>
+  <script src="js/export.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

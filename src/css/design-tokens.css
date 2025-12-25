@@ -1,0 +1,166 @@
+/**
+ * D365 Form Design Tokens
+ * 
+ * CSS Custom Properties for Dynamics 365 Customer Insights forms.
+ * These variables control the visual appearance of exported forms.
+ * 
+ * Usage: Modify these values in the builder's Design Tokens panel,
+ * then they are exported inline with the form HTML.
+ */
+
+:root {
+  /* ===== TYPOGRAPHY ===== */
+  --form-font-family: 'Segoe UI', Arial, sans-serif;
+  --form-font-size-base: 14px;
+  --form-font-size-small: 12px;
+  --form-font-size-large: 16px;
+  --form-line-height-base: 1.5;
+  --form-line-height-tight: 1.25;
+
+  /* Font weights */
+  --form-font-weight-light: 300;
+  --form-font-weight-normal: 400;
+  --form-font-weight-medium: 500;
+  --form-font-weight-semibold: 600;
+  --form-font-weight-bold: 700;
+
+  /* ===== COLORS ===== */
+  /* Text colors */
+  --form-text-primary: #000000;
+  --form-text-secondary: #323130;
+  --form-text-tertiary: #605e5c;
+  --form-text-placeholder: #a19f9d;
+  --form-text-required: #c33400;
+
+  /* Background colors */
+  --form-bg-primary: #ffffff;
+  --form-bg-secondary: #faf9f8;
+  --form-bg-transparent: rgba(255, 255, 255, 0);
+
+  /* Border colors */
+  --form-border-default: #e1dfdd;
+  --form-border-focus: #0078d4;
+  --form-border-hover: #c8c6c4;
+  --form-border-error: #c33400;
+  --form-divider-color: #e1dfdd;
+
+  /* Interactive colors */
+  --form-accent-color: #0078d4;
+  --form-accent-hover: #1a56c9;
+  --form-accent-active: #144ba1;
+
+  /* ===== SPACING ===== */
+  --form-spacing-xs: 4px;
+  --form-spacing-sm: 8px;
+  --form-spacing-md: 12px;
+  --form-spacing-base: 16px;
+  --form-spacing-lg: 20px;
+  --form-spacing-xl: 30px;
+
+  /* Field-specific spacing */
+  --form-field-padding-vertical: 20px;
+  --form-field-padding-horizontal: 30px;
+  --form-field-gap: 16px;
+
+  /* ===== BORDERS & CORNERS ===== */
+  --form-border-width: 1px;
+  --form-border-width-thick: 2px;
+  --form-border-style: solid;
+
+  /* Border radius */
+  --form-radius-small: 4px;
+  --form-radius-medium: 8px;
+  --form-radius-large: 12px;
+
+  /* Field-specific radius */
+  --form-input-radius: 4px;
+  --form-button-radius: 4px;
+  --form-checkbox-radius: 4px;
+
+  /* ===== INPUT FIELDS ===== */
+  --input-font-family: var(--form-font-family);
+  --input-font-size: var(--form-font-size-base);
+  --input-font-weight: var(--form-font-weight-normal);
+  --input-padding-vertical: 10px;
+  --input-padding-horizontal: 12px;
+  --input-bg: var(--form-bg-secondary);
+  --input-bg-focus: var(--form-bg-primary);
+  --input-border-width: var(--form-border-width);
+  --input-border-style: var(--form-border-style);
+  --input-border-color: var(--form-border-default);
+  --input-border-radius: var(--form-input-radius);
+  --input-text-color: var(--form-text-primary);
+  --input-placeholder-color: var(--form-text-placeholder);
+
+  /* Input focus state */
+  --input-focus-border-color: var(--form-border-focus);
+  --input-focus-border-width: 2px;
+  --input-focus-outline-offset: 0px;
+
+  /* ===== LABELS ===== */
+  --label-font-family: var(--form-font-family);
+  --label-font-size: var(--form-font-size-large);
+  --label-font-weight: var(--form-font-weight-semibold);
+  --label-text-color: var(--form-text-secondary);
+  --label-margin-bottom: 0px;
+
+  /* ===== TEXTAREA ===== */
+  --textarea-min-height: 100px;
+
+  /* ===== BUTTON ===== */
+  --button-font-family: var(--form-font-family);
+  --button-font-size: var(--form-font-size-large);
+  --button-font-weight: var(--form-font-weight-bold);
+  --button-text-color: #ffffff;
+  --button-bg-color: #2266e3;
+  --button-bg-hover: var(--form-accent-hover);
+  --button-bg-active: var(--form-accent-active);
+  --button-border-radius: var(--form-button-radius);
+  --button-padding-vertical: 14px;
+  --button-padding-horizontal: 32px;
+  --button-border-width: 0px;
+  --button-border-style: none;
+  --button-border-color: transparent;
+
+  /* ===== HEADINGS ===== */
+  --heading-h1-font-size: 28px;
+  --heading-h1-font-weight: var(--form-font-weight-bold);
+  --heading-h1-line-height: var(--form-line-height-tight);
+  --heading-h1-color: var(--form-text-primary);
+
+  --heading-h2-font-size: 22px;
+  --heading-h2-font-weight: var(--form-font-weight-semibold);
+  --heading-h2-line-height: var(--form-line-height-tight);
+  --heading-h2-color: #333333;
+
+  /* ===== LAYOUT ===== */
+  --form-max-width: 600px;
+  --form-layout-bg: var(--form-bg-transparent);
+
+  /* ===== DIVIDER ===== */
+  --divider-border-width: var(--form-border-width-thick);
+  --divider-border-style: var(--form-border-style);
+  --divider-border-color: var(--form-divider-color);
+  --divider-margin-vertical: 20px;
+
+  /* ===== CHECKBOX ===== */
+  --checkbox-size: 20px;
+  --checkbox-border-width: var(--form-border-width);
+  --checkbox-border-color: var(--form-text-secondary);
+  --checkbox-border-radius: var(--form-checkbox-radius);
+  --checkbox-accent-color: var(--form-accent-color);
+  --checkbox-label-gap: 8px;
+
+  /* ===== RADIO BUTTONS ===== */
+  --radio-size: 20px;
+  --radio-border-width: var(--form-border-width);
+  --radio-border-color: var(--form-text-secondary);
+  --radio-accent-color: var(--form-accent-color);
+  --radio-label-gap: 8px;
+
+  /* ===== CONSENT BLOCK ===== */
+  --consent-checkbox-size: var(--checkbox-size);
+  --consent-label-font-size: var(--form-font-size-base);
+  --consent-label-font-weight: var(--form-font-weight-normal);
+  --consent-gap: 12px;
+}
